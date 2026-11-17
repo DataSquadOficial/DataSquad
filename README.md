@@ -2,7 +2,7 @@
 
 # DataSquad · sitio web
 
-**En línea:** https://datasquadoficial.github.io/
+**En línea:** https://datasquadoficial.github.io/DataSquad/
 
 Sitio original de DataSquad (Next.js 15 + Tailwind 4, exportación estática).
 

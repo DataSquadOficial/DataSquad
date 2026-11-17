@@ -1,3 +1,6 @@
+/** Carpeta del sitio en GitHub Pages (nombre del repositorio). Debe coincidir con next.config.mjs. */
+export const BASE = "/DataSquad";
+
 export const CONTACT = {
   email: "datasquadoficial@gmail.com",
   github: "https://github.com/DataSquadOficial",
@@ -112,7 +115,7 @@ export const SUITE: SuiteApp[] = [
 
 /** Descarga del lanzador de la suite. El archivo vive en public/descargas/. */
 export const DOWNLOAD = {
-  href: "/descargas/DataSquad-Suite-Launcher.exe",
+  href: `${BASE}/descargas/DataSquad-Suite-Launcher.exe`,
   file: "DataSquad-Suite-Launcher.exe",
   version: "0.1.0",
   size: "15 MB",

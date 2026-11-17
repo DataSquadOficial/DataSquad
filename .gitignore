@@ -2,5 +2,8 @@ node_modules/
 .next/
 out/
 *.log
+publicar-log.txt
+publicar.tmp
+.fuse_hidden*
 .DS_Store
 Thumbs.db

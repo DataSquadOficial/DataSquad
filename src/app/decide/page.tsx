@@ -5,7 +5,7 @@ import { Industries } from "@/components/Sections";
 import Simulator from "@/components/Simulator";
 import { AppIcon, DownloadButton, DownloadMeta } from "@/components/Suite";
 import { Btn, Container, SectionHead } from "@/components/ui";
-import { SUITE } from "@/lib/data";
+import { BASE, SUITE } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "DataSquad Decide · Motor de decisiones",
@@ -84,9 +84,9 @@ export default function DecidePage() {
                 controls
                 preload="none"
                 playsInline
-                poster="/video/decide-poster.jpg"
+                poster={`${BASE}/video/decide-poster.jpg`}
               >
-                <source src="/video/decide-historia.mp4" type="video/mp4" />
+                <source src={`${BASE}/video/decide-historia.mp4`} type="video/mp4" />
               </video>
               <p className="tag mt-5 text-faint">La historia de Decide · 45 segundos</p>
             </div>
