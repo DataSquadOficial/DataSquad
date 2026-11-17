@@ -47,9 +47,18 @@ export default function SuitePage() {
                 </Btn>
               </div>
               <DownloadMeta className="mt-4" />
-              <p className="mt-3 max-w-lg text-sm text-faint">
-                Si Windows muestra un aviso de SmartScreen al abrirlo, elige «Más información» y luego «Ejecutar de todas formas».
-              </p>
+              <div className="mt-6 max-w-xl rounded-2xl border border-line bg-panel p-5 text-sm leading-relaxed text-muted">
+                <p className="font-semibold text-ink">¿Tu navegador o Windows muestran una advertencia?</p>
+                <p className="mt-1.5">
+                  Es normal por ahora: el archivo es nuevo y todavía no tiene firma digital de código. En el navegador elige «Conservar»;
+                  al abrirlo, en la ventana de SmartScreen elige «Más información» y luego «Ejecutar de todas formas».
+                </p>
+                <p className="mt-3">Para confirmar que el archivo es el original, compara su huella SHA-256:</p>
+                <code className="mt-1.5 block rounded-lg bg-bg-2 p-2.5 font-mono text-[11px] break-all text-ink">{DOWNLOAD.sha256}</code>
+                <p className="mt-2 text-xs text-faint">
+                  En PowerShell: <span className="font-mono">Get-FileHash {DOWNLOAD.file}</span>
+                </p>
+              </div>
             </div>
             <div data-reveal="" className="card p-8 md:p-12">
               <IconGrid />

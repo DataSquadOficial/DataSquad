@@ -9,6 +9,8 @@ const COLS = [
       { label: "Precios", href: "/precios" },
       { label: "Contacto", href: "/contacto" },
       { label: "Preguntas frecuentes", href: "/contacto#faq" },
+      { label: "Aviso de privacidad", href: "/legal/privacidad" },
+      { label: "Términos de uso", href: "/legal/terminos" },
     ],
   },
   {
@@ -56,7 +58,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-xs text-faint sm:flex-row sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} DataSquad. Hecho en México.</p>
+          <p>© {new Date().getFullYear()} DataSquad. Hecho en México. Este sitio no usa cookies ni rastreadores.</p>
           <p className="italic">{CONTACT.lema}</p>
         </div>
       </div>

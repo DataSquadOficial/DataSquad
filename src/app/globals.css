@@ -13,7 +13,7 @@
   --color-line-2: #c9c9c3;
   --color-ink: #0d0d0d;
   --color-muted: #5c5c58;
-  --color-faint: #8d8d87;
+  --color-faint: #6b6b65;
 
   /* nombres heredados: ahora son tonos de gris */
   --color-cian: #111111;
@@ -56,6 +56,13 @@ body {
 ::selection {
   background: #0d0d0d;
   color: #fff;
+}
+
+/* Navegación con teclado: el foco siempre se ve */
+:focus-visible {
+  outline: 2px solid var(--accent, #0d0d0d);
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
 @layer components {
@@ -131,7 +138,7 @@ body {
     --color-line-2: #3d3d3b;
     --color-ink: #f4f4f2;
     --color-muted: #a8a8a2;
-    --color-faint: #7b7b75;
+    --color-faint: #9a9a94;
     background: var(--color-bg);
     color: var(--color-ink);
   }

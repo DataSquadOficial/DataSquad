@@ -120,6 +120,8 @@ export const DOWNLOAD = {
   version: "0.1.0",
   size: "15 MB",
   os: "Windows 10/11 · 64 bits",
+  /** Huella del archivo. Recalcúlala cada vez que cambies el .exe (PowerShell: Get-FileHash archivo.exe). */
+  sha256: "182f61415b833b898b12638ee0944df9f2a9a2c3edac6a94edbe25a2209b76ff",
 };
 
 export const PRINCIPLES = [

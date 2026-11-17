@@ -82,6 +82,7 @@ export default function DecidePage() {
               <video
                 className="block aspect-video w-full rounded-2xl border border-line bg-black shadow-2xl"
                 controls
+                aria-label="Video: la historia de DataSquad Decide, 45 segundos"
                 preload="none"
                 playsInline
                 poster={`${BASE}/video/decide-poster.jpg`}
